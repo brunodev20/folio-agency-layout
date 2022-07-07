@@ -1,0 +1,14 @@
+@import '../abstract/variables';
+@import '../components/_media-queries';
+
+html {
+  width: 1440px;
+  background: #FFFFFF;
+  font-family: $standard-font;
+  @include tablet {
+    width: 1025px;
+  }
+  @include mobile {
+    width: 235px;
+  }
+}
