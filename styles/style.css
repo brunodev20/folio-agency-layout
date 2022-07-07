@@ -32,7 +32,6 @@ html {
     height: 128px;
     left: 0;
     margin-top: 0;
-    border: 1px solid red;
     justify-content: space-around;
   }
 }
@@ -114,7 +113,6 @@ html {
   height: 548px;
   left: 135px;
   top: 110px;
-  border: 1px solid red;
 }
 @media screen and (max-width: 376px) {
   #main-page .description {
@@ -131,7 +129,6 @@ html {
   letter-spacing: -1px;
   font-size: 84px;
   line-height: 100.24px;
-  border: 1px solid red;
 }
 @media screen and (max-width: 376px) {
   #main-page .description h1 {
@@ -149,7 +146,6 @@ html {
   line-height: 32px;
   width: 370px;
   margin-top: 40px;
-  border: 1px solid red;
 }
 @media screen and (max-width: 376px) {
   #main-page .description p {
