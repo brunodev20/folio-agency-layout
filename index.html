@@ -4,26 +4,31 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css%22%3E">
   <title>Home | Folio</title>
+  <link rel="stylesheet" href="./styles/reset.css">
   <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body>
-  <header id="navbar-main">
-    <img class="full-logo" href="index.html" src="images/full-logo.png">
-    <nav>
-      <ul class="navbar">
-        <li>About</li>
-        <li>Work</li>
-        <li>Services</li>
-        <li>Jobs</li>
-      </ul>
-    </nav>
-    <button class="contact-us" type="button">Contact Us</button>
-    <img class="burger-icon" src="./images/burger icon.svg" alt="">
-  </header>
-
-  <section id="main-page">
+  <!-- navbar -->
+  <div class="full-hero-page">
+    <header id="navbar-hero">
+      <img class="full-logo" href="index.html" src="images/hero-images/full-logo.png">
+      <nav>
+        <ul class="navbar">
+          <li>About</li>
+          <li>Work</li>
+          <li>Services</li>
+          <li>Jobs</li>
+        </ul>
+      </nav>
+      <button class="contact-us" type="button">Contact Us</button>
+      <img class="burger-icon" src="./images/hero-images/burger icon.svg" alt="">
+    </header>
+    
+    <!-- hero page -->
+    <section id="hero-page">
       <div class="description">
         <h1>Stand Out from The Crowd.</h1>
         <p>Agency is a full-service agency, busy designing and building beautiful digital products, brands, and experiences.</p>
@@ -34,44 +39,62 @@
         <img src="images/scroll-down-arrow.png" alt="">
         <p>Scroll down</p>
       </span>
-
-      <div class="background-images">
-        <img class="line" src="images/line-1.svg" alt="">
-        <img class="computer-image" src="images/main-page-image.png" alt="">
-        <img class="computer-image-mobile" src="images/main-page-image-mobile-version.png" alt="">
+      
+      <div class="hero-background-images">
+        <img class="line-1" src="images/hero-images/line-1.svg" alt="">
+        <img class="hero-image" src="images/hero-images/hero-image.png" alt="">
+        <img class="hero-image-mobile" src="images/hero-images/hero-image-mobile-version.png" alt="">
       </div>
     </section>
-<!-- 
-    <section id="who-we-are-page">
-      <header>
-        <img href="index.html" src="images/logo.png">
-        <h5>01 Who We Are</h5>
-        <h2>We Make Designs that Lead and Inspire.</h2>
-        <img src="" alt="Left Arrow">
-        <img src="" alt="Right Arrow">
-      </header>
-
-      <div class="years">
-        <h5>2017</h5>
-        <h5>2018</h5>
-        <h5>2019</h5>
-        <h5>2020</h5>
-        <h5>2021</h5>
+  </div>
+  
+  <!-- who we are page -->
+  <section id="who-we-are-page">
+    <header class="who-we-are-header">
+      
+      <div class="who-we-are-title">
+        <img class="logo-who-we-are" href="index.html" src="images/logo.png">
+        <p>01.</p>
+        <h5>Who We Are</h5>
+        <h2 class="we-make-designs-text">We Make Designs that Lead and Inspire.</h2>
       </div>
-
-      <div class="img-who-we-are">
-        <img src="" alt="">
+      
+      
+      <div class="arrow-and-dropdown">
+        <img class="who-we-are-arrows" src="./images/who-we-are-images/arrows.png" alt="arrows">
+        
+        <span class="dropdown-years">
+          <select class="dropdown-menu">
+            <option>2017</option>
+            <option>2018</option>
+            <option>2019</option>
+            <option>2020</option>
+            <option>2021</option>
+          </select>
+        </span>
+        
       </div>
-
-      <div>
-        <h3>A design team building a curated marketplace for UI designers.</h3>
-        <p>4,404 curated design resources to energize your creative workflow. We're a growing family of 334,531 designers and markers from around the world.</p>
-        <button type="button">Contact Us</button>
-        <h1>28</h1>
-        <h6>Biggest Branding</h6>
+    </header>
+    
+    
+    <div class="who-we-are-background-images">
+      <img class="who-we-are-image" src="./images/who-we-are-images/who-we-are-computer.png" alt="">
+    </div>
+    
+    <div class="who-we-are-description">
+      <h6>A design team building a curated marketplace for UI designers.</h6>
+      <p>4,404 curated design resources to energize your creative workflow. We're a growing family of 334,531 designers and markers from around the world.</p>
+      <button type="button">Contact Us</button>
+      <div class="biggest-branding">
+        <div class="biggest-branding-items">
+          <h1>28</h1>
+          <h6>Biggest Branding</h6>
+        </div>
       </div>
-    </section>
-
+    </div>
+  </section>
+  
+  <!--
     <section id="what-we-do-page">
       <header>
         <img href="index.html" src="logo.png">
@@ -80,7 +103,7 @@
         <img src="" alt="Left Arrow">
         <img src="" alt="Right Arrow">
       </header>
-
+      
       <div class="qualities">
         <ul>
           <li><img src="" alt="">Strategy</li>
@@ -89,7 +112,7 @@
           <li><img src="" alt="">Communicate</li>
         </ul>
       </div>
-
+      
       <div class="achievement">
         <img src="" alt="Phone with pathways">
         <img href="index.html" src="logo.png">
@@ -98,7 +121,7 @@
         <h1>68</h1>
         <h6>😎 Successful Projects</h6>
       </div>
-
+      
       <div class="famous-projects">
         <img href="index.html" src="logo.png">
         <h5>04. Famous Projects</h5>
@@ -106,38 +129,38 @@
         <button type="button">Contact Us</button>
         <p>Agency is a full-service agency, busy designing and building beautiful digital products, brands, and experiences.</p>
       </div>
-
+      
       <div class="sapiens">
         <h6>Featured Product</h6>
         <h3>Sapiens: The Free Character Builder App.</h3>
         <p>Beautiful library of modular, component-based character illustrations free to use for all your personal or client projects.</p>
         <img src="" alt="girl walking while on her phone">
       </div>
-
+      
       <div class="bento-vol-2">
         <h3>Bento Vol.2</h3>
         <img src="" alt="horizontal webpage with ball in graph">
         <p>Agency is a full-service agency, busy designing and building beautiful digital products, brands, and experiences.</p>
       </div>
-
+      
       <div class="bento-3d">
         <h3>Bento 3D Illustration</h3>
         <img src="" alt="vertical webpage with ball in graph">
         <p>Agency is a full-service agency, busy designing and building beautiful digital products, brands, and experiences.</p>
       </div>
-
+      
       <div class="bento-vol-3">
         <h3>Bento Vol. 3</h3>
         <img src="" alt="song app with mic">
         <p>Agency is a full-service agency, busy designing and building beautiful digital products, brands, and experiences.</p>
       </div>
-
+      
       <div class="sapiens-man">
         <h3>Sapiens: Man</h3>
         <img src="" alt="man in computer">
         <p>Agency is a full-service agency, busy designing and building beautiful digital products, brands, and experiences.</p>
       </div>
-    
+      
       <div class="call-to-action">
         <img src="logo.png" alt="">
         <img src="" alt="phone with blue background">
@@ -146,7 +169,7 @@
         <button type="button">Apply Now</button>
       </div>
     </section>
-
+    
     <section id="jobs">
       <div class="we-are-hiring">
         <img src="logo.png" alt="">
@@ -155,7 +178,7 @@
         <p>Agency is a full-service agency, busy designing and building beautiful digital products, brands, and experiences.</p>
         <button type="button"><p>Available jobs</p></button>
       </div>
-
+      
       <div class="job-titles">
         <ul>
           <li>
@@ -163,19 +186,19 @@
             <p>2 years experience</p>
             <img src="" alt="right arrow">
           </li>
-
+          
           <li>
             <h4>Visual Designer</h4>
             <p>2 years experience</p>
             <img src="" alt="right arrow">
           </li>
-
+          
           <li>
             <h4>Art Director</h4>
             <p>2 years experience</p>
             <img src="" alt="right arrow">
           </li>
-
+          
           <li>
             <h4>Web Designer</h4>
             <p>2 years experience</p>
@@ -183,7 +206,7 @@
           </li>
         </ul>
       </div>
-
+      
       <div class="say-hello">
         <img src="" alt="blue background">
         <img src="logo.png" alt="">
@@ -195,7 +218,7 @@
         <img src="" alt="right arrow with circle around it">
       </div>
     </section>
-
+    
     <footer>
       <img src="full-logo.png" alt="">
       <p>Agency is a full-service agency, busy designing and building beautiful digital products, brands, and experiences.</p>

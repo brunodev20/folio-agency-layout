@@ -1,0 +1,160 @@
+@import '../abstract/variables';
+@import '../components/media-queries';
+
+#who-we-are-page {
+  background: $color-heading;
+  @include mobile {
+    height: 1681px;
+    padding-top: 64px;
+  }
+  .who-we-are-header {
+    @include mobile {
+      width: 310px;
+      height: 314px;
+      margin-left: 33px;
+      margin-bottom: 56px; 
+    }
+    .logo-who-we-are {
+      @include mobile {
+        display: none;
+      }
+    }
+    .who-we-are-title {
+      @include mobile {
+        display: flex;
+        flex-wrap: wrap;
+
+        width: 226px;
+        height: 234px;
+
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 18px;
+      }
+      p {
+        color: $deactive-text;
+      }
+      h5 {
+        @include mobile {
+          margin-left: 24px;
+          font-weight: 600;
+          width: 84px;
+          height: 18px;
+          line-height: 18px;
+        }
+        color: white;
+      }
+      .we-make-designs-text {
+        @include mobile {
+        color: white;
+        width: 221px;
+        height: 192px;
+        margin-top: 24px;
+        margin-bottom: 32px;
+        
+        font-size: 40px;
+        font-weight: 700;
+        
+        line-height: 48px;
+        letter-spacing: -0.4px;
+        }
+      }
+    }
+    .arrow-and-dropdown {
+      @include mobile {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 56px;
+      }
+      .who-we-are-arrows {
+        @include mobile {
+        height: 48px;
+        }
+        @include desktop {
+          height: 64px;
+        }
+      }
+    }
+  }
+  .who-we-are-background-images {
+    .who-we-are-image {
+      width: 375px;
+      height: 424px;
+    }
+  }
+  .who-we-are-description {
+    margin-top: 56px;
+    margin-left: 32px;
+    width: 311px;
+    height: 336px;
+    h6 {
+      height: 96px;
+      
+      font-weight: 700;
+      font-size: 24px;
+      
+      line-height: 32px;
+      
+      color: white;
+    }
+    p {
+      width: 311px;
+      height: 112px;
+      
+      line-height: 28px;
+      
+      margin-top: 40px;
+      
+      color: $grey-text;
+    }
+    button {
+      margin-top: 32px;
+      
+      width: 160px;
+      height: 56px;
+      
+      font-size: 16px;
+      
+      color: white;
+      background: $blue-button;
+      
+      border: 0px;
+      border-radius: 8px;
+      &:hover {
+        color: $blue-button;
+        background-color: white;
+        
+        border: 1px solid $blue-button;
+        transition: 0.1s;
+      }
+    }
+    .biggest-branding {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      
+      height: 310px;
+      font-weight: 600;
+      
+      color: white;
+      
+      
+      margin-top: 56.5px;
+      border-radius: 50%;
+
+      box-shadow: 10px 10px 40px black;
+      .biggest-branding-items {
+        height: 177px;
+        h1 {
+          font-size: 140px;
+        }
+        
+        h6 {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
