@@ -117,7 +117,7 @@ html {
   }
 }
 .full-hero-page #hero-page .description {
-  z-index: 0;
+  z-index: 1;
   position: relative;
   width: 467px;
   height: 548px;
@@ -214,13 +214,13 @@ html {
   color: #8B8B8B;
 }
 .full-hero-page #hero-page .hero-background-images {
-  z-index: 1;
+  z-index: 0;
 }
 .full-hero-page #hero-page .hero-background-images .line-1 {
   position: absolute;
   width: 642.21px;
   height: 819.25px;
-  left: 321px;
+  left: 325px;
   top: 0.98px;
 }
 @media screen and (max-width: 376px) {
@@ -259,11 +259,9 @@ html {
   }
 }
 
-#who-we-are-page {
-  background: #232340;
-}
 @media screen and (max-width: 376px) {
   #who-we-are-page {
+    background: #232340;
     height: 1681px;
     padding-top: 64px;
   }
@@ -399,4 +397,115 @@ html {
 }
 #who-we-are-page .who-we-are-description .biggest-branding .biggest-branding-items h6 {
   font-size: 18px;
+}
+
+@media screen and (max-width: 376px) {
+  #what-we-do-page {
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+#what-we-do-page .what-we-do-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 227px;
+  height: 304px;
+  margin-left: 32px;
+  margin-top: 64px;
+  border: 1px solid red;
+}
+@media screen and (max-width: 376px) {
+  #what-we-do-page .what-we-do-header .logo-what-we-do {
+    display: none;
+  }
+}
+#what-we-do-page .what-we-do-header .what-we-do-title-and-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 227px;
+  height: 234px;
+  border: 1px solid red;
+}
+@media screen and (max-width: 376px) {
+  #what-we-do-page .what-we-do-header .what-we-do-title-and-description .what-we-do-title {
+    display: flex;
+    justify-content: space-between;
+    width: 131px;
+  }
+}
+#what-we-do-page .what-we-do-header .what-we-do-title-and-description .what-we-do-title h5 {
+  color: #5468E7;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+}
+#what-we-do-page .what-we-do-header .what-we-do-title-and-description .what-we-do-description {
+  width: 257px;
+}
+#what-we-do-page .what-we-do-header .what-we-do-title-and-description .what-we-do-description h2 {
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+}
+#what-we-do-page .what-we-do-header .what-we-do-title-and-description .what-we-do-arrows {
+  width: 108px;
+  height: 46px;
+}
+#what-we-do-page .qualities {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 56px;
+}
+#what-we-do-page .qualities .li-container:nth-child(1) {
+  width: 185px;
+  height: 91.02px;
+}
+#what-we-do-page .qualities .li-container:nth-child(2) {
+  width: 193px;
+  height: 95px;
+}
+#what-we-do-page .qualities .li-container:nth-child(3) {
+  width: 200px;
+  height: 92px;
+}
+#what-we-do-page .qualities .li-container:nth-child(4) {
+  width: 228px;
+  height: 92px;
+}
+#what-we-do-page .qualities ul {
+  display: flex;
+  flex-direction: column;
+  height: 856px;
+  justify-content: space-between;
+}
+#what-we-do-page .qualities ul .what-we-do-cards {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 32px;
+  width: 311px;
+  height: 190px;
+  box-shadow: 0px 7.5px #ECEBEC;
+}
+#what-we-do-page .qualities ul .what-we-do-cards:hover {
+  background: #5468E7;
+  box-shadow: 0px 0px;
+}
+#what-we-do-page .qualities ul .what-we-do-cards:hover .li-container p {
+  color: white;
+}
+#what-we-do-page .qualities ul .what-we-do-cards .li-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 48px;
+}
+#what-we-do-page .qualities ul .what-we-do-cards .li-container p {
+  font-size: 18px;
+  color: #5468E7;
 }/*# sourceMappingURL=style.css.map */

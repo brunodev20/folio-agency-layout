@@ -2,8 +2,8 @@
 @import '../components/media-queries';
 
 #who-we-are-page {
-  background: $color-heading;
   @include mobile {
+    background: $color-heading;
     height: 1681px;
     padding-top: 64px;
   }

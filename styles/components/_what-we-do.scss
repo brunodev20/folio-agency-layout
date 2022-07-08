@@ -1,0 +1,135 @@
+@import '../abstract/variables';
+@import '../components/media-queries';
+
+#what-we-do-page {
+  @include mobile {
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .what-we-do-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 227px;
+    height: 304px;
+    margin-left: 32px;
+    margin-top: 64px;
+    border: 1px solid red;
+    .logo-what-we-do {
+      @include mobile {
+        display: none;
+      }
+    }
+    .what-we-do-title-and-description {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      width: 227px;
+      height: 234px;
+
+      border: 1px solid red;
+
+      .what-we-do-title {
+        @include mobile {
+          display: flex;
+          justify-content: space-between;
+          width: 131px;
+        }
+        h5 {
+          color: $blue-button;
+          font-size: 14px;
+          font-weight: 600;
+          line-height: 18px;
+        }
+      }
+      .what-we-do-description {
+        width: 257px;
+        h2 {
+          font-size: 40px;
+          line-height: 48px;
+          font-weight: 700;
+          letter-spacing: -0.4px;
+        }
+      }
+      .what-we-do-arrows {
+        width: 108px;
+        height: 46px;
+      }
+    }
+  }
+
+  .qualities {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 56px;
+
+    .li-container:nth-child(1) {
+      width: 185px;
+      height: 91.02px;
+    }
+
+    .li-container:nth-child(2) {
+      width: 193px;
+      height: 95px;
+      
+    }
+
+    .li-container:nth-child(3) {
+      width: 200px;
+      height: 92px;
+    }
+
+    .li-container:nth-child(4) {
+      width: 228px;
+      height: 92px;
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      height: 856px;
+
+      justify-content: space-between;
+
+      
+      
+      .what-we-do-cards {
+        display: flex;
+        align-items: center;
+        
+        background: white;
+        border-radius: 32px;
+
+        width: 311px;
+        height: 190px;
+
+        box-shadow: 0px 7.5px #ECEBEC;
+
+        &:hover {
+          background: $blue-button;
+          box-shadow: 0px 0px;
+          .li-container {
+            p {
+              color: white;
+            }
+          }
+        }
+        
+        .li-container {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          margin-left: 48px;
+
+          p {
+            font-size: 18px;
+            color: $blue-button;
+          }
+        }
+      }
+    }
+  }
+}
