@@ -285,7 +285,7 @@ html {
   #who-we-are-page .who-we-are-header .who-we-are-title {
     display: flex;
     flex-wrap: wrap;
-    width: 226px;
+    width: 235px;
     height: 234px;
     font-size: 16px;
     font-weight: 600;
@@ -302,7 +302,7 @@ html {
   #who-we-are-page .who-we-are-header .who-we-are-title h5 {
     margin-left: 24px;
     font-weight: 600;
-    width: 84px;
+    width: 100px;
     height: 18px;
     line-height: 18px;
   }
@@ -310,7 +310,7 @@ html {
 @media screen and (max-width: 376px) {
   #who-we-are-page .who-we-are-header .who-we-are-title .we-make-designs-text {
     color: white;
-    width: 221px;
+    width: 290px;
     height: 192px;
     margin-top: 24px;
     margin-bottom: 32px;
@@ -325,6 +325,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 32px;
     margin-bottom: 56px;
   }
 }

@@ -24,7 +24,7 @@
         display: flex;
         flex-wrap: wrap;
 
-        width: 226px;
+        width: 235px;
         height: 234px;
 
         font-size: 16px;
@@ -38,7 +38,7 @@
         @include mobile {
           margin-left: 24px;
           font-weight: 600;
-          width: 84px;
+          width: 100px;
           height: 18px;
           line-height: 18px;
         }
@@ -47,7 +47,7 @@
       .we-make-designs-text {
         @include mobile {
         color: white;
-        width: 221px;
+        width: 290px;
         height: 192px;
         margin-top: 24px;
         margin-bottom: 32px;
@@ -65,6 +65,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      margin-top: 32px;
       margin-bottom: 56px;
       }
       .who-we-are-arrows {
