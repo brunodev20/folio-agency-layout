@@ -259,73 +259,62 @@ html {
   }
 }
 
-@media screen and (max-width: 376px) {
-  #who-we-are-page {
-    background: #232340;
-    height: 1681px;
-    padding-top: 64px;
-  }
+#who-we-are-page {
+  background: #232340;
+  height: 1681px;
+  padding-top: 64px;
+}
+#who-we-are-page .who-we-are-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 310px;
+  height: 314px;
+  margin-left: 33px;
+}
+#who-we-are-page .who-we-are-header .who-we-are-title-and-description {
+  width: 226px;
+  height: 234px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#who-we-are-page .who-we-are-header .who-we-are-title-and-description .who-we-are-title {
+  display: flex;
+  justify-content: space-between;
+  font-family: "SF Pro Text";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  width: 129px;
+  height: 18px;
 }
 @media screen and (max-width: 376px) {
-  #who-we-are-page .who-we-are-header {
-    width: 310px;
-    height: 314px;
-    margin-left: 33px;
-    margin-bottom: 56px;
-  }
-}
-@media screen and (max-width: 376px) {
-  #who-we-are-page .who-we-are-header .logo-who-we-are {
+  #who-we-are-page .who-we-are-header .who-we-are-title-and-description .who-we-are-title .logo-who-we-are {
     display: none;
   }
 }
-@media screen and (max-width: 376px) {
-  #who-we-are-page .who-we-are-header .who-we-are-title {
-    display: flex;
-    flex-wrap: wrap;
-    width: 235px;
-    height: 234px;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 18px;
-  }
-}
-#who-we-are-page .who-we-are-header .who-we-are-title p {
+#who-we-are-page .who-we-are-header .who-we-are-title-and-description .who-we-are-title p {
   color: #ADADAD;
 }
-#who-we-are-page .who-we-are-header .who-we-are-title h5 {
-  color: white;
+#who-we-are-page .who-we-are-header .who-we-are-title-and-description .who-we-are-title h5 {
+  color: #FFFFFF;
 }
-@media screen and (max-width: 376px) {
-  #who-we-are-page .who-we-are-header .who-we-are-title h5 {
-    margin-left: 24px;
-    font-weight: 600;
-    width: 100px;
-    height: 18px;
-    line-height: 18px;
-  }
+#who-we-are-page .who-we-are-header .who-we-are-title-and-description .who-we-are-description {
+  color: #FFFFFF;
+  width: 230px;
+  height: 192px;
 }
-@media screen and (max-width: 376px) {
-  #who-we-are-page .who-we-are-header .who-we-are-title .we-make-designs-text {
-    color: white;
-    width: 290px;
-    height: 192px;
-    margin-top: 24px;
-    margin-bottom: 32px;
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 48px;
-    letter-spacing: -0.4px;
-  }
+#who-we-are-page .who-we-are-header .who-we-are-title-and-description .who-we-are-description .we-make-designs-text {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -0.4px;
 }
-@media screen and (max-width: 376px) {
-  #who-we-are-page .who-we-are-header .arrow-and-dropdown {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 32px;
-    margin-bottom: 56px;
-  }
+#who-we-are-page .who-we-are-header .arrow-and-dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 @media screen and (max-width: 376px) {
   #who-we-are-page .who-we-are-header .arrow-and-dropdown .who-we-are-arrows {
@@ -337,32 +326,46 @@ html {
     height: 64px;
   }
 }
+#who-we-are-page .who-we-are-header .arrow-and-dropdown .dropdown {
+  width: 144px;
+  height: 48px;
+}
+@media screen and (min-width: 1440px) {
+  #who-we-are-page .who-we-are-header .arrow-and-dropdown .dropdown {
+    display: none;
+  }
+}
 #who-we-are-page .who-we-are-background-images .who-we-are-image {
+  margin-top: 56px;
   width: 375px;
   height: 424px;
 }
-#who-we-are-page .who-we-are-description {
+#who-we-are-page .who-we-are-information {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
   margin-top: 56px;
   margin-left: 32px;
   width: 311px;
   height: 336px;
 }
-#who-we-are-page .who-we-are-description h6 {
+#who-we-are-page .who-we-are-information h6 {
   height: 96px;
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
+  letter-spacing: -0.2px;
   color: white;
 }
-#who-we-are-page .who-we-are-description p {
+#who-we-are-page .who-we-are-information p {
   width: 311px;
   height: 112px;
+  font-size: 16px;
+  font-weight: 400;
   line-height: 28px;
-  margin-top: 40px;
   color: #8B8B8B;
 }
-#who-we-are-page .who-we-are-description button {
-  margin-top: 32px;
+#who-we-are-page .who-we-are-information button {
   width: 160px;
   height: 56px;
   font-size: 16px;
@@ -371,31 +374,34 @@ html {
   border: 0px;
   border-radius: 8px;
 }
-#who-we-are-page .who-we-are-description button:hover {
+#who-we-are-page .who-we-are-information button:hover {
   color: #5468E7;
   background-color: white;
   border: 1px solid #5468E7;
   transition: 0.1s;
 }
-#who-we-are-page .who-we-are-description .biggest-branding {
+#who-we-are-page .biggest-branding-items {
   display: flex;
   flex-direction: column;
   text-align: center;
-  justify-content: center;
-  height: 310px;
-  font-weight: 600;
-  color: white;
+  justify-content: space-around;
+  align-items: center;
   margin-top: 56.5px;
+  margin-left: 33px;
+  width: 310px;
+  height: 310px;
   border-radius: 50%;
   box-shadow: 10px 10px 40px black;
 }
-#who-we-are-page .who-we-are-description .biggest-branding .biggest-branding-items {
+#who-we-are-page .biggest-branding-items .biggest-branding {
+  color: white;
+  font-weight: 600;
   height: 177px;
 }
-#who-we-are-page .who-we-are-description .biggest-branding .biggest-branding-items h1 {
+#who-we-are-page .biggest-branding-items .biggest-branding h1 {
   font-size: 140px;
 }
-#who-we-are-page .who-we-are-description .biggest-branding .biggest-branding-items h6 {
+#who-we-are-page .biggest-branding-items .biggest-branding h6 {
   font-size: 18px;
 }
 
@@ -415,7 +421,6 @@ html {
   height: 304px;
   margin-left: 32px;
   margin-top: 64px;
-  border: 1px solid red;
 }
 @media screen and (max-width: 376px) {
   #what-we-do-page .what-we-do-header .logo-what-we-do {
@@ -428,7 +433,7 @@ html {
   justify-content: space-between;
   width: 227px;
   height: 234px;
-  border: 1px solid red;
+  margin-left: 32px;
 }
 @media screen and (max-width: 376px) {
   #what-we-do-page .what-we-do-header .what-we-do-title-and-description .what-we-do-title {
@@ -461,6 +466,11 @@ html {
   justify-content: space-around;
   margin-top: 56px;
 }
+#what-we-do-page .qualities .line-1-image {
+  position: absolute;
+  z-index: 0;
+  margin-top: 444px;
+}
 #what-we-do-page .qualities .li-container:nth-child(1) {
   width: 185px;
   height: 91.02px;
@@ -478,6 +488,7 @@ html {
   height: 92px;
 }
 #what-we-do-page .qualities ul {
+  z-index: 1;
   display: flex;
   flex-direction: column;
   height: 856px;
@@ -490,7 +501,7 @@ html {
   border-radius: 32px;
   width: 311px;
   height: 190px;
-  box-shadow: 0px 7.5px #ECEBEC;
+  box-shadow: 0 0 10px #ECEBEC;
 }
 #what-we-do-page .qualities ul .what-we-do-cards:hover {
   background: #5468E7;
@@ -508,4 +519,102 @@ html {
 #what-we-do-page .qualities ul .what-we-do-cards .li-container p {
   font-size: 18px;
   color: #5468E7;
+}
+#what-we-do-page .achievement {
+  margin-top: 56px;
+}
+#what-we-do-page .achievement .achievement-title-description-and-successful-projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 227px;
+  height: 399px;
+  margin-left: 32px;
+}
+@media screen and (max-width: 376px) {
+  #what-we-do-page .achievement .achievement-title-description-and-successful-projects .logo-achievement {
+    display: none;
+  }
+}
+#what-we-do-page .achievement .achievement-title-description-and-successful-projects .achievement-title-and-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 156px;
+  height: 176px;
+}
+#what-we-do-page .achievement .achievement-title-description-and-successful-projects .achievement-title-and-description .achievement-title {
+  display: flex;
+  justify-content: space-between;
+  height: 24px;
+  font-size: 14px;
+  font-weight: 600;
+}
+#what-we-do-page .achievement .achievement-title-description-and-successful-projects .achievement-title-and-description .achievement-title h5 {
+  color: #8B8B8B;
+}
+#what-we-do-page .achievement .achievement-title-description-and-successful-projects .achievement-title-and-description .achievement-title p {
+  color: #232340;
+}
+#what-we-do-page .achievement .achievement-title-description-and-successful-projects .achievement-title-and-description .achievement-description {
+  color: #232340;
+  width: 227px;
+  height: 128px;
+}
+#what-we-do-page .achievement .achievement-title-description-and-successful-projects .achievement-title-and-description .achievement-description h6 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.2px;
+}
+#what-we-do-page .achievement .achievement-title-description-and-successful-projects .achievement-successful-projects {
+  width: 194px;
+  height: 191px;
+  font-weight: 600;
+}
+#what-we-do-page .achievement .achievement-title-description-and-successful-projects .achievement-successful-projects h1 {
+  color: #5468E7;
+  width: 177px;
+  height: 167px;
+  line-height: 167.07px;
+  font-size: 140px;
+}
+#what-we-do-page .achievement .achievement-title-description-and-successful-projects .achievement-successful-projects h6 {
+  color: black;
+  width: 193px;
+  height: 24px;
+  font-size: 18px;
+  line-height: 24px;
+}
+#what-we-do-page .achievement-images {
+  height: 600px;
+  margin-top: 36px;
+}
+#what-we-do-page .achievement-images .circle-behind-phone {
+  position: absolute;
+  z-index: 1;
+  width: 330px;
+  height: 330px;
+  left: 23px;
+  margin-top: 125px;
+}
+#what-we-do-page .achievement-images .phone-image {
+  position: absolute;
+  z-index: 2;
+  width: 375px;
+  height: 600px;
+  left: -0.96px;
+}
+#what-we-do-page .achievement-images .pagination-image {
+  width: 69px;
+  height: 12px;
+  margin-left: 146px;
+  margin-top: 521px;
+}
+#what-we-do-page .achievement-images .line-2-image {
+  position: absolute;
+  left: -30px;
+  width: 456.68px;
+  height: 582.58px;
+  z-index: 0;
 }/*# sourceMappingURL=style.css.map */

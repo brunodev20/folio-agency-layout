@@ -16,7 +16,6 @@
     height: 304px;
     margin-left: 32px;
     margin-top: 64px;
-    border: 1px solid red;
     .logo-what-we-do {
       @include mobile {
         display: none;
@@ -26,12 +25,12 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-
+      
       width: 227px;
       height: 234px;
-
-      border: 1px solid red;
-
+      
+      margin-left: 32px;
+      
       .what-we-do-title {
         @include mobile {
           display: flex;
@@ -60,39 +59,45 @@
       }
     }
   }
-
+  
   .qualities {
     display: flex;
     justify-content: space-around;
     margin-top: 56px;
-
+    .line-1-image {
+      position: absolute;
+      z-index: 0;
+      margin-top: 444px;
+    }
+    
     .li-container:nth-child(1) {
       width: 185px;
       height: 91.02px;
     }
-
+    
     .li-container:nth-child(2) {
       width: 193px;
       height: 95px;
       
     }
-
+    
     .li-container:nth-child(3) {
       width: 200px;
       height: 92px;
     }
-
+    
     .li-container:nth-child(4) {
       width: 228px;
       height: 92px;
     }
     ul {
+      z-index: 1;
       display: flex;
       flex-direction: column;
       height: 856px;
-
+      
       justify-content: space-between;
-
+      
       
       
       .what-we-do-cards {
@@ -101,12 +106,12 @@
         
         background: white;
         border-radius: 32px;
-
+        
         width: 311px;
         height: 190px;
-
-        box-shadow: 0px 7.5px #ECEBEC;
-
+        
+        box-shadow: 0 0 10px #ECEBEC;
+        
         &:hover {
           background: $blue-button;
           box-shadow: 0px 0px;
@@ -121,15 +126,130 @@
           display: flex;
           align-items: center;
           justify-content: space-between;
-
+          
           margin-left: 48px;
-
+          
           p {
             font-size: 18px;
             color: $blue-button;
           }
         }
       }
+    }
+  }
+  
+  .achievement {
+    margin-top: 56px;
+    .achievement-title-description-and-successful-projects {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      
+      width: 227px;
+      height: 399px;
+      
+      margin-left: 32px;
+      .logo-achievement {
+        @include mobile {
+          display: none;
+        }
+      }
+      .achievement-title-and-description {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+        width: 156px;
+        height: 176px;
+        .achievement-title {
+          display: flex;
+          justify-content: space-between;
+          
+          height: 24px;
+          
+          font-size: 14px;
+          font-weight: 600;
+          
+          h5 {
+            color: $grey-text;
+          }
+          p {
+            color: $color-heading;
+          }
+        }
+        .achievement-description {
+          color: $color-heading;
+          width: 227px;
+          height: 128px;
+          h6 {
+            font-size: 24px;
+            font-weight: 700;
+
+            line-height: 32px;
+            letter-spacing: -0.2px;
+          }
+        }
+      }
+      .achievement-successful-projects {
+        width: 194px;
+        height: 191px;
+
+        font-weight: 600;
+        h1 {
+          color: $blue-button;
+
+          width: 177px;
+          height: 167px;
+          line-height: 167.07px;
+
+          font-size: 140px;
+        }
+        h6 {
+          color: black;
+
+          width: 193px;
+          height: 24px;
+
+          font-size: 18px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+  .achievement-images {
+    height: 600px;
+  
+    margin-top: 36px;
+    .circle-behind-phone {
+      position: absolute;
+      z-index: 1;
+      width: 330px;
+      height: 330px;
+      left: 23px;
+
+      margin-top: 125px;
+
+    }
+    .phone-image {
+      position: absolute;
+      z-index: 2;
+      width: 375px;
+      height: 600px;
+      left: -0.96px;
+    }
+
+    .pagination-image {
+      width: 69px;
+      height: 12px;
+      margin-left: 146px;
+      margin-top: 521px;
+    }
+    .line-2-image {
+      position: absolute;
+      left: -30px;
+      width: 456.68px;
+      height: 582.58px;
+      z-index: 0;
     }
   }
 }
