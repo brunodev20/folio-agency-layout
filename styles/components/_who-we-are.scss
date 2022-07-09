@@ -1,10 +1,14 @@
+//Who We Are SCSS
 @import '../abstract/variables';
 @import '../components/media-queries';
 
 #who-we-are-page {
   background: $color-heading;
   height: 1681px;
-  padding-top: 64px;
+  margin-top: 392px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   
   .who-we-are-header {    
     display: flex;
@@ -26,7 +30,7 @@
         display: flex;
         justify-content: space-between;
         
-        font-family: 'SF Pro Text';
+        font-family: $alternate-font;
         font-size: 14px;
         font-weight: 600;
         line-height: 18px;

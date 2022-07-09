@@ -1,92 +1,51 @@
-//CSS da Navbar da página
+//Navbar SCSS
 @import '../abstract/variables';
 @import '../components/_media-queries';
 
-#navbar-hero { // inclui a Navbar completa (3 itens: Logo, ul e botão Contact Us)
+#hero-navbar-container { // inclui a Navbar completa (3 itens: Logo, ul e botão Contact Us)
+
+  width: 375px;
+  height: 128px;
+
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  
-  position: relative;
-  width: 1296px;
-  height: 64px;
-  left: 72px;
-  margin-top: 64px;
-  
-  z-index: 1;
 
-  @include mobile {
-    width: 375px;
-    height: 128px;
-    left: 0;
-    margin-top: 0;
-    justify-content: space-around;
-  }
-  
-  .full-logo {
-    width: 159px;
-    height: 40px;
-    @include mobile {
-      width: 127.2px;
-      height: 32px;
-    }
-  }
-
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 392px;
-    height: 22px;
-    list-style: none;
-    @include mobile {
-      display: none;
-    }
-
-    li {
-      color: $grey-text;
-      
-      font-size: 18px;
-      font-weight: 600;
-      cursor: pointer;
-
-      &:hover {
-        color: $blue-button;
-      }
-    }
-  }
-  .contact-us {
-    width: 180px;
-    height: 64px;
-    border-radius: 8px;
-    border: 0;
-    
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 24px;
-
-    color: white;
-    background-color: $color-heading;
-
-    cursor: pointer;
-    
-
-    &:hover {
-      color: $color-heading;
-      background-color: white;
-      border: 1px solid $color-heading;
-      transition: 0.1s;
-    }
-    @include mobile {
-      display: none;
-    }
-
-  }
-  .burger-icon {
+  .hero-image-mobile {
     @include desktop {
       display: none;
     }
     @include mobile {
+      position: absolute;
+      margin-top: 343px;
+      border: 2px solid red;
+      width: 375px;
+      height: 812px;
+    }
+  }
+
+  .hero-header {
+    width: 311px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .full-logo-image {
+      width: 127.2px;
+      height: 32px;
+      .full-logo {
+      width: 127.2px;
+      height: 32px;
+      }
+    }
+    .navbar-container {
+      display: none;
+    }
+    .contact-us-button {
+      display: none;
+    }
+    .burger-icon-image {
       width: 32px;
       height: 12px;
     }
