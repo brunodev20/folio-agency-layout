@@ -5,7 +5,6 @@
 #what-we-do-page {
   width: 100%;
   @include mobile {
-    background: #FFFFFF;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -71,26 +70,6 @@
       margin-top: 444px;
     }
     
-    .li-container:nth-child(1) {
-      width: 185px;
-      height: 91.02px;
-    }
-    
-    .li-container:nth-child(2) {
-      width: 193px;
-      height: 95px;
-      
-    }
-    
-    .li-container:nth-child(3) {
-      width: 200px;
-      height: 92px;
-    }
-    
-    .li-container:nth-child(4) {
-      width: 228px;
-      height: 92px;
-    }
     ul {
       z-index: 1;
       display: flex;
@@ -99,7 +78,34 @@
       
       justify-content: space-between;
       
+      .what-we-do-cards:nth-child(1) {
+        .li-container {
+          width: 185px;
+          height: 91.02px;
+        }
+      }
       
+      .what-we-do-cards:nth-child(2) {
+        .li-container {
+          width: 193px;
+          height: 95px;
+        }
+        
+      }
+      
+      .what-we-do-cards:nth-child(3) {
+        .li-container {
+          width: 200px;
+          height: 92px;
+        }
+      }
+      
+      .what-we-do-cards:nth-child(4) {
+        .li-container {
+          width: 228px;
+          height: 92px;
+        }
+      }
       
       .what-we-do-cards {
         display: flex;

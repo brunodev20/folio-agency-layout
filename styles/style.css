@@ -2,7 +2,7 @@
 html, body {
   max-width: 100%;
   overflow-x: hidden;
-  background: #FFFFFF;
+  background-color: #F6F6F6;
   font-family: "SF Pro Display", sans-serif;
 }
 
@@ -289,7 +289,6 @@ html, body {
 }
 @media screen and (max-width: 376px) {
   #what-we-do-page {
-    background: #FFFFFF;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -352,28 +351,28 @@ html, body {
   z-index: 0;
   margin-top: 444px;
 }
-#what-we-do-page .qualities .li-container:nth-child(1) {
-  width: 185px;
-  height: 91.02px;
-}
-#what-we-do-page .qualities .li-container:nth-child(2) {
-  width: 193px;
-  height: 95px;
-}
-#what-we-do-page .qualities .li-container:nth-child(3) {
-  width: 200px;
-  height: 92px;
-}
-#what-we-do-page .qualities .li-container:nth-child(4) {
-  width: 228px;
-  height: 92px;
-}
 #what-we-do-page .qualities ul {
   z-index: 1;
   display: flex;
   flex-direction: column;
   height: 856px;
   justify-content: space-between;
+}
+#what-we-do-page .qualities ul .what-we-do-cards:nth-child(1) .li-container {
+  width: 185px;
+  height: 91.02px;
+}
+#what-we-do-page .qualities ul .what-we-do-cards:nth-child(2) .li-container {
+  width: 193px;
+  height: 95px;
+}
+#what-we-do-page .qualities ul .what-we-do-cards:nth-child(3) .li-container {
+  width: 200px;
+  height: 92px;
+}
+#what-we-do-page .qualities ul .what-we-do-cards:nth-child(4) .li-container {
+  width: 228px;
+  height: 92px;
 }
 #what-we-do-page .qualities ul .what-we-do-cards {
   display: flex;
@@ -712,4 +711,156 @@ html, body {
   background-color: white;
   border: 1px solid #5468E7;
   transition: 0.1s;
+}
+
+#call-to-action {
+  height: 977px;
+}
+@media screen and (min-width: 1440px) {
+  #call-to-action .call-to-action-image {
+    display: none;
+  }
+}
+#jobs {
+  width: 100%;
+  height: 1042px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+#jobs .jobs-logo {
+  display: none;
+}
+#jobs .jobs-title-description-and-info {
+  width: 311px;
+  height: 198px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#jobs .jobs-title-description-and-info .jobs-title {
+  color: #5468E7;
+  width: 138px;
+  height: 18px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-family: "SF Pro Text", sans-serif;
+  font-weight: 600;
+  line-height: 18px;
+}
+#jobs .jobs-title-description-and-info .jobs-description {
+  color: #232340;
+  width: 311px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -0.4px;
+}
+#jobs .jobs-title-description-and-info .jobs-info {
+  color: #606060;
+  height: 84px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+#jobs .job-positions ul {
+  width: 343px;
+  height: 764px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#jobs .job-positions ul .job-positions-cards:nth-child(2) {
+  background-color: #232340;
+  width: 390px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#jobs .job-positions ul .job-positions-cards:nth-child(2) .job-title-experience-and-arrows {
+  width: 157px;
+}
+#jobs .job-positions ul .job-positions-cards:nth-child(2) .job-title-experience-and-arrows .job-title {
+  color: white;
+  width: 164px;
+  font-size: 22.76px;
+  font-weight: 700;
+  line-height: 28.44px;
+  letter-spacing: -0.36px;
+}
+#jobs .job-positions ul .job-positions-cards:nth-child(2) .job-title-experience-and-arrows .job-experience {
+  color: #8B8B8B;
+  font-weight: 400;
+  font-size: 12.8px;
+  line-height: 23px;
+}
+#jobs .job-positions ul .job-positions-cards {
+  z-index: 1;
+  background-color: white;
+  width: 350px;
+  height: 175px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 24px;
+}
+#jobs .job-positions ul .job-positions-cards .job-title-experience-and-arrows {
+  width: 226px;
+  height: 90.89px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#jobs .job-positions ul .job-positions-cards .job-title-experience-and-arrows .job-title {
+  color: #232340;
+  display: flex;
+  justify-content: space-between;
+  width: 226px;
+  height: 32px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+}
+#jobs .job-positions ul .job-positions-cards .job-title-experience-and-arrows .job-title .graphic-designer-pop-up {
+  width: 24px;
+  height: 24px;
+}
+#jobs .job-positions ul .job-positions-cards .job-title-experience-and-arrows .job-title .web-designer-pop-up {
+  width: 24px;
+  height: 24px;
+}
+#jobs .job-positions ul .job-positions-cards .job-title-experience-and-arrows .job-experience {
+  color: #606060;
+  width: 133px;
+  height: 28px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+#jobs .job-positions ul .job-positions-cards .job-title-experience-and-arrows .job-positions-card-arrow {
+  width: 19px;
+  height: 16.22px;
+}
+#jobs .jobs-background-images {
+  z-index: 0;
+  width: 375px;
+}
+#jobs .jobs-background-images .line {
+  position: relative;
+  max-width: 50%;
+}
+#jobs .jobs-background-images .line .line-1 {
+  position: absolute;
+  overflow: hidden;
+  height: 582.58px;
+  top: -1145px;
+  left: 176px;
 }/*# sourceMappingURL=style.css.map */

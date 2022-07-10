@@ -1,0 +1,27 @@
+@import '../abstract/variables';
+@import '../components/media-queries';
+
+#call-to-action {
+  height: 977px;
+  .call-to-action-image {
+    @include desktop {
+      display: none;
+    }
+  }
+  .famous-projects-title-description-and-apply-now-button {
+    .call-to-action-title-and-description {
+      .call-to-action-title {
+
+      }
+      .call-to-action-description {
+
+      }
+    }
+    .apply-now {
+      .apply-now-button {
+
+      }
+    }
+  }
+}
+
