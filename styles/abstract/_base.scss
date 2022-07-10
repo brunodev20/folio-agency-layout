@@ -1,14 +1,21 @@
 @import '../abstract/variables';
 @import '../components/_media-queries';
 
-html {
+html, body {
   width: 1440px;
+  overflow-x: hidden;
+
   background: #FFFFFF;
   font-family: $standard-font;
   @include tablet {
+    overflow-x: hidden;
     width: 1025px;
   }
   @include mobile {
-    width: 375px;
+    width: 376px;
   }
+}
+
+body {
+  position: relative;
 }

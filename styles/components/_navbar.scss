@@ -17,11 +17,12 @@
     }
     @include mobile {
       position: absolute;
-      margin-top: 343px;
-      border: 2px solid red;
+      margin-top: 698px;
       width: 375px;
       height: 812px;
+      z-index: 1;
     }
+  }
   }
 
   .hero-header {
@@ -50,4 +51,3 @@
       height: 12px;
     }
   }
-}

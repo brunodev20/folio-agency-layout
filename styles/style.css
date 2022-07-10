@@ -1,18 +1,24 @@
 @import './reset.css';
-html {
+html, body {
   width: 1440px;
+  overflow-x: hidden;
   background: #FFFFFF;
   font-family: "SF Pro Display", sans-serif;
 }
 @media screen and (max-width: 1025px) {
-  html {
+  html, body {
+    overflow-x: hidden;
     width: 1025px;
   }
 }
 @media screen and (max-width: 376px) {
-  html {
-    width: 375px;
+  html, body {
+    width: 376px;
   }
+}
+
+body {
+  position: relative;
 }
 
 #hero-navbar-container {
@@ -30,33 +36,34 @@ html {
 @media screen and (max-width: 376px) {
   #hero-navbar-container .hero-image-mobile {
     position: absolute;
-    margin-top: 343px;
-    border: 2px solid red;
+    margin-top: 698px;
     width: 375px;
     height: 812px;
+    z-index: 1;
   }
 }
-#hero-navbar-container .hero-header {
+
+.hero-header {
   width: 311px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-#hero-navbar-container .hero-header .full-logo-image {
+.hero-header .full-logo-image {
   width: 127.2px;
   height: 32px;
 }
-#hero-navbar-container .hero-header .full-logo-image .full-logo {
+.hero-header .full-logo-image .full-logo {
   width: 127.2px;
   height: 32px;
 }
-#hero-navbar-container .hero-header .navbar-container {
+.hero-header .navbar-container {
   display: none;
 }
-#hero-navbar-container .hero-header .contact-us-button {
+.hero-header .contact-us-button {
   display: none;
 }
-#hero-navbar-container .hero-header .burger-icon-image {
+.hero-header .burger-icon-image {
   width: 32px;
   height: 12px;
 }
@@ -91,14 +98,14 @@ html {
   line-height: 28px;
 }
 #hero-page .hero-title-description-and-recent-work-button .hero-recent-work-button .recent-work {
-  width: 180px;
-  height: 64px;
+  width: 160px;
+  height: 56px;
   cursor: pointer;
   border-radius: 8px;
   border: 0px;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 24px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
   color: white;
   background-color: #5468E7;
 }
@@ -112,60 +119,61 @@ html {
   display: none;
 }
 #hero-page .hero-background-images {
-  z-index: -1;
-}
-#hero-page .hero-background-images .line-1 {
-  position: absolute;
-  width: 456.68px;
-  height: 582.58px;
-  left: 176px;
-  top: -15.31px;
+  z-index: 0;
+  width: 375px;
 }
 #hero-page .hero-background-images .hero-image {
-  position: relative;
-  width: 924px;
-  height: 722px;
-  left: 406px;
-  top: 222px;
+  display: none;
 }
-@media screen and (max-width: 376px) {
-  #hero-page .hero-background-images .hero-image {
-    display: none;
-  }
+#hero-page .hero-background-images .line {
+  position: relative;
+  max-width: 50%;
+}
+#hero-page .hero-background-images .line .line-1 {
+  position: absolute;
+  overflow: hidden;
+  height: 582.58px;
+  left: 176px;
+  top: -484px;
 }
 
 #who-we-are-page {
   background: #232340;
+  width: 100%;
   height: 1681px;
   margin-top: 392px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
 }
 #who-we-are-page .who-we-are-header {
+  border: 1px solid red;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 310px;
-  height: 314px;
-  margin-left: 33px;
+  width: 82.6%;
+  height: 18.67%;
 }
 #who-we-are-page .who-we-are-header .who-we-are-title-and-description {
-  width: 226px;
-  height: 234px;
+  border: 1px solid red;
+  width: 72.9%;
+  height: 74.5%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 #who-we-are-page .who-we-are-header .who-we-are-title-and-description .who-we-are-title {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  border: 1px solid red;
   font-family: "SF Pro Text", sans-serif;
   font-size: 14px;
   font-weight: 600;
   line-height: 18px;
-  width: 129px;
-  height: 18px;
+  width: 57.07%;
+  height: 7.69%;
 }
 @media screen and (max-width: 376px) {
   #who-we-are-page .who-we-are-header .who-we-are-title-and-description .who-we-are-title .logo-who-we-are {
@@ -180,8 +188,9 @@ html {
 }
 #who-we-are-page .who-we-are-header .who-we-are-title-and-description .who-we-are-description {
   color: #FFFFFF;
-  width: 230px;
-  height: 192px;
+  border: 1px solid red;
+  width: 100%;
+  height: 82.05%;
 }
 #who-we-are-page .who-we-are-header .who-we-are-title-and-description .who-we-are-description .we-make-designs-text {
   font-weight: 700;
@@ -190,23 +199,20 @@ html {
   letter-spacing: -0.4px;
 }
 #who-we-are-page .who-we-are-header .arrow-and-dropdown {
+  border: 1px solid red;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  width: 100%;
 }
 @media screen and (max-width: 376px) {
   #who-we-are-page .who-we-are-header .arrow-and-dropdown .who-we-are-arrows {
-    height: 48px;
-  }
-}
-@media screen and (min-width: 1440px) {
-  #who-we-are-page .who-we-are-header .arrow-and-dropdown .who-we-are-arrows {
-    height: 64px;
+    width: 36.12%;
+    height: 100%;
   }
 }
 #who-we-are-page .who-we-are-header .arrow-and-dropdown .dropdown {
-  width: 144px;
-  height: 48px;
+  width: 46.45%;
+  height: 100%;
 }
 @media screen and (min-width: 1440px) {
   #who-we-are-page .who-we-are-header .arrow-and-dropdown .dropdown {
@@ -215,19 +221,23 @@ html {
 }
 #who-we-are-page .who-we-are-background-images .who-we-are-image {
   margin-top: 56px;
-  width: 375px;
+  width: 100%;
   height: 424px;
 }
 #who-we-are-page .who-we-are-information {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  margin-top: 56px;
-  margin-left: 32px;
   width: 311px;
   height: 336px;
 }
-#who-we-are-page .who-we-are-information h6 {
+#who-we-are-page .who-we-are-information .who-we-are-h6-and-p {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 248px;
+}
+#who-we-are-page .who-we-are-information .who-we-are-h6-and-p h6 {
   height: 96px;
   font-weight: 700;
   font-size: 24px;
@@ -235,7 +245,7 @@ html {
   letter-spacing: -0.2px;
   color: white;
 }
-#who-we-are-page .who-we-are-information p {
+#who-we-are-page .who-we-are-information .who-we-are-h6-and-p p {
   width: 311px;
   height: 112px;
   font-size: 16px;
@@ -261,17 +271,18 @@ html {
 #who-we-are-page .biggest-branding-items {
   display: flex;
   flex-direction: column;
-  text-align: center;
-  justify-content: space-around;
   align-items: center;
-  margin-top: 56.5px;
-  margin-left: 33px;
+  text-align: center;
+  justify-content: center;
   width: 310px;
   height: 310px;
   border-radius: 50%;
   box-shadow: 10px 10px 40px black;
 }
 #who-we-are-page .biggest-branding-items .biggest-branding {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   color: white;
   font-weight: 600;
   height: 177px;
@@ -281,6 +292,8 @@ html {
 }
 #who-we-are-page .biggest-branding-items .biggest-branding h6 {
   font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
 }
 
 @media screen and (max-width: 376px) {
@@ -311,7 +324,6 @@ html {
   justify-content: space-between;
   width: 227px;
   height: 234px;
-  margin-left: 32px;
 }
 @media screen and (max-width: 376px) {
   #what-we-do-page .what-we-do-header .what-we-do-title-and-description .what-we-do-title {
@@ -467,6 +479,7 @@ html {
 #what-we-do-page .achievement-images {
   height: 600px;
   margin-top: 36px;
+  overflow-x: hidden;
 }
 #what-we-do-page .achievement-images .circle-behind-phone {
   position: absolute;
@@ -495,4 +508,216 @@ html {
   width: 456.68px;
   height: 582.58px;
   z-index: 0;
+}
+
+#famous-projects {
+  height: 3484px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+#famous-projects .famous-projects-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#famous-projects .famous-projects-header .logo-famous-projects {
+  display: none;
+}
+#famous-projects .famous-projects-header .famous-projects-title-description-and-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 311px;
+  height: 238px;
+}
+#famous-projects .famous-projects-header .famous-projects-title-description-and-info .famous-projects-title-and-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 255px;
+  height: 138px;
+}
+#famous-projects .famous-projects-header .famous-projects-title-description-and-info .famous-projects-title-and-description .famous-projects-title {
+  display: flex;
+  justify-content: space-between;
+  width: 161px;
+  height: 18px;
+  color: #5468E7;
+  font-family: "SF Pro Text", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+}
+#famous-projects .famous-projects-header .famous-projects-title-description-and-info .famous-projects-title-and-description .famous-projects-description {
+  width: 255px;
+  height: 96px;
+  color: #232340;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -0.4px;
+}
+#famous-projects .famous-projects-header .famous-projects-title-description-and-info .famous-projects-info {
+  width: 311px;
+  height: 84px;
+  color: #606060;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+#famous-projects .bento-illustrations {
+  border: 1px solid red;
+  height: 3047.56px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+#famous-projects .bento-illustrations .bento-containers-standard-config {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 312.11px;
+  height: 583.56px;
+}
+#famous-projects .bento-illustrations .bento-containers-standard-config .bento-3d-one {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+#famous-projects .bento-illustrations .bento-containers-standard-config .bento-3d-one img {
+  max-width: 100%;
+}
+#famous-projects .bento-illustrations .bento-containers-standard-config .bento-3d-one .girl-on-phone {
+  display: flex;
+  flex-direction: column;
+  z-index: 0;
+}
+#famous-projects .bento-illustrations .bento-containers-standard-config .bento-3d-one .girl-on-phone .girl-background {
+  position: absolute;
+  z-index: -1;
+}
+#famous-projects .bento-illustrations .bento-containers-standard-config .bento-3d-one .girl-on-phone .featured-product-pop-up {
+  position: absolute;
+  margin-left: 23.89px;
+  margin-top: 303px;
+  z-index: 0;
+}
+#famous-projects .bento-illustrations .bento-containers-standard-config .bento-3d-two {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+#famous-projects .bento-illustrations .bento-containers-standard-config .bento-3d-two img {
+  max-width: 100%;
+}
+#famous-projects .bento-illustrations .bento-containers-standard-config .bento-3d-two .webpage-purple {
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+#famous-projects .bento-illustrations .bento-containers-standard-config .bento-3d-two .purple-background {
+  position: absolute;
+  z-index: 0;
+}
+#famous-projects .bento-illustrations .bento-containers-standard-config .bento-3d-three {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+#famous-projects .bento-illustrations .bento-containers-standard-config .bento-3d-three img {
+  max-width: 100%;
+}
+#famous-projects .bento-illustrations .bento-containers-standard-config .bento-3d-three .webpage-orange {
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+#famous-projects .bento-illustrations .bento-containers-standard-config .bento-3d-three .orange-background {
+  position: absolute;
+  z-index: 0;
+}
+#famous-projects .bento-illustrations .bento-containers-standard-config .bento-3d-four {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+#famous-projects .bento-illustrations .bento-containers-standard-config .bento-3d-four img {
+  max-width: 100%;
+}
+#famous-projects .bento-illustrations .bento-containers-standard-config .bento-3d-four .music-board {
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+#famous-projects .bento-illustrations .bento-containers-standard-config .bento-3d-four .blue-background {
+  position: absolute;
+  z-index: 0;
+}
+#famous-projects .bento-illustrations .bento-containers-standard-config .bento-3d-five {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+#famous-projects .bento-illustrations .bento-containers-standard-config .bento-3d-five img {
+  max-width: 100%;
+}
+#famous-projects .bento-illustrations .bento-containers-standard-config .bento-3d-five .man-in-computer {
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+#famous-projects .bento-illustrations .bento-containers-standard-config .bento-3d-five .man-background {
+  position: absolute;
+  z-index: 0;
+}
+#famous-projects .bento-illustrations .bento-containers-standard-config .bento-3d-titles-descriptions-and-arrow-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 204px;
+}
+#famous-projects .bento-illustrations .bento-containers-standard-config .bento-3d-titles-descriptions-and-arrow-right .bento-3d-titles-and-descriptions {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 312px;
+  height: 132px;
+}
+#famous-projects .bento-illustrations .bento-containers-standard-config .bento-3d-titles-descriptions-and-arrow-right .bento-3d-titles-and-descriptions h6 {
+  color: #232340;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.2px;
+}
+#famous-projects .bento-illustrations .bento-containers-standard-config .bento-3d-titles-descriptions-and-arrow-right .bento-3d-titles-and-descriptions p {
+  color: #606060;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+#famous-projects .bento-illustrations .bento-containers-standard-config .bento-3d-titles-descriptions-and-arrow-right .bento-arrows {
+  width: 48px;
+  height: 48px;
+}
+#famous-projects .famous-projects-contact-us .famous-projects-contact-us-button {
+  width: 313px;
+  height: 46px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: 0px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  color: white;
+  background-color: #5468E7;
+}
+#famous-projects .famous-projects-contact-us .famous-projects-contact-us-button:hover {
+  color: #5468E7;
+  background-color: white;
+  border: 1px solid #5468E7;
+  transition: 0.1s;
 }/*# sourceMappingURL=style.css.map */

@@ -30,7 +30,6 @@
       width: 227px;
       height: 234px;
       
-      margin-left: 32px;
       
       .what-we-do-title {
         @include mobile {
@@ -221,6 +220,8 @@
     height: 600px;
   
     margin-top: 36px;
+    overflow-x: hidden;
+
     .circle-behind-phone {
       position: absolute;
       z-index: 1;
@@ -247,6 +248,7 @@
     }
     .line-2-image {
       position: absolute;
+      
       left: -30px;
       width: 456.68px;
       height: 582.58px;

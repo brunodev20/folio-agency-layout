@@ -4,39 +4,47 @@
 
 #who-we-are-page {
   background: $color-heading;
+  width: 100%;
   height: 1681px;
   margin-top: 392px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
   
-  .who-we-are-header {    
+  .who-we-are-header {
+    border: 1px solid red;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     
-    width: 310px;
-    height: 314px;
-    margin-left: 33px;
+    width: 82.6%;
+    height: 18.67%;
     .who-we-are-title-and-description {
-      width: 226px;
-      height: 234px;
+      border: 1px solid red;
+
+      width: 72.9%;
+      height: 74.5%;
       
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: space-around;
+
       
       .who-we-are-title {        
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
+        border: 1px solid red;
         
         font-family: $alternate-font;
         font-size: 14px;
         font-weight: 600;
         line-height: 18px;
         
-        width: 129px;
-        height: 18px;
+        width: 57.07%;
+        height: 7.69%;
         .logo-who-we-are {
           @include mobile {
             display: none;
@@ -50,11 +58,11 @@
         }
       }
       .who-we-are-description {
-        
         color: #FFFFFF;
+        border: 1px solid red;
         
-        width: 230px;
-        height: 192px;
+        width: 100%;
+        height: 82.05%;
         .we-make-designs-text {
           font-weight: 700;
           font-size: 40px;
@@ -64,22 +72,24 @@
       }
     }
       .arrow-and-dropdown {
+        border: 1px solid red;
 
         display: flex;
-        align-items: center;
         justify-content: space-between;
 
-        .who-we-are-arrows { 
+        width: 100%;
+
+        .who-we-are-arrows {          
           @include mobile {
-            height: 48px;
+            width: 36.12%;
+            height: 100%;
           }
           @include desktop {
-            height: 64px;
           }
         }
         .dropdown {
-          width: 144px;
-          height: 48px;
+          width: 46.45%;
+          height: 100%;
           @include desktop {
             display: none;
           }
@@ -92,7 +102,7 @@
   .who-we-are-background-images {
     .who-we-are-image {      
       margin-top: 56px;
-      width: 375px;
+      width: 100%;
       height: 424px;
     }
   }
@@ -101,31 +111,34 @@
     justify-content: space-between;
     flex-direction: column;
 
-    margin-top: 56px;
-    margin-left: 32px;
-
     width: 311px;
     height: 336px;
-
-    h6 {
-      height: 96px;
+    .who-we-are-h6-and-p {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       
-      font-weight: 700;
-      font-size: 24px;
-      line-height: 32px;
-      letter-spacing: -0.2px;
-      
-      color: white;
-    }
-    p {
-      width: 311px;
-      height: 112px;
-      
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 28px;
-      
-      color: $grey-text;
+      height: 248px;
+      h6 {
+        height: 96px;
+        
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: -0.2px;
+        
+        color: white;
+      }
+      p {
+        width: 311px;
+        height: 112px;
+        
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
+        
+        color: $grey-text;
+      }
     }
     button {
       width: 160px;
@@ -146,16 +159,14 @@
         transition: 0.1s;
       }
     }
+
   }
   .biggest-branding-items {
     display: flex;
     flex-direction: column;
-    text-align: center;
-    justify-content: space-around;
     align-items: center;
-    
-    margin-top: 56.5px;
-    margin-left: 33px;
+    text-align: center;
+    justify-content: center;
     
     width: 310px;
     height: 310px;
@@ -165,6 +176,12 @@
     box-shadow: 10px 10px 40px black;
     
     .biggest-branding {
+
+      display: flex;
+      flex-direction: column;
+      
+      text-align: center;
+
       color: white;
       font-weight: 600;
       height: 177px;
@@ -174,6 +191,8 @@
       
       h6 {
         font-size: 18px;
+        font-weight: 600;
+        line-height: 24px;
       }
     }
   }
