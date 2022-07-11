@@ -1,0 +1,207 @@
+//Say Hello and Footer page SCSS
+@import "../abstract/variables";
+@import "../components/media-queries";
+
+#say-hello {
+  width: 100%;
+  height: 977px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  .say-hello-page {
+    z-index: 1;
+    background: $blue-button;
+    
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+    width: 312px;
+    height: 548px;
+
+    border-radius: 24px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    .say-hello-background-line {
+      z-index: -1;
+      position: absolute;
+      margin-left: 17px;
+    }
+    .say-hello-balloon {
+      width: 73px;
+      height: 73px;
+      
+      margin-left: 30px;
+      .say-hello-balloon-image {
+        width: 73px;
+        height: 73px;
+      }
+    }
+    .say-hello-title-description-info-and-contact-us-button {
+      width: 312px;
+      height: 388px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+
+      .say-hello-title-and-description {
+
+        width: 236px;
+        height: 130px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        .say-hello-logo {
+          display: none;
+        }
+        .say-hello-title {
+          width: 90px;
+          height: 18px;
+
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+
+          color: $color-text-white;
+
+          font-size: 14px;
+          font-family: $alternate-font;
+
+          font-weight: 600;
+          line-height: 18px;
+        }
+        .say-hello-description {
+          color: $color-text-white;
+          
+          text-align: center;
+          
+          font-size: 18px;
+          font-weight: 600;
+
+          line-height: 24px;
+        }
+      }
+      .say-hello-mid-line {
+        .say-hello-mid-line-image {
+
+        }
+      }
+      .say-hello-info {
+        width: 260px;
+        height: 80px;
+
+        color: $color-text-white;
+
+        text-align: center;
+
+        font-size: 32px;
+        font-weight: 700;
+
+        line-height: 40px;
+        letter-spacing: -0.5px;
+      }
+      .say-hello-contact-us {
+        .say-hello-contact-us-button {
+          width: 263px;
+          height: 56px;
+
+          background: $color-text-white;
+          color: $blue-button;
+          
+          font-size: 16px;
+          font-weight: 600;
+          
+          line-height: 22px;
+
+          border: 0px;
+          border-radius: 8px;
+        }
+      }
+    }
+  }
+  footer {
+    .footer-container {
+      .footer-background-line {
+        position: absolute;
+        margin-top: -108px;
+        margin-left: -32px;
+      }
+      .footer-logo-description-dropdown-menu-social-media-and-copyright {
+        width: 311px;
+        height: 315px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        .footer-full-logo {
+          .footer-full-logo-image {
+            width: 136px;
+            height: 35px;
+          }
+        }
+        .footer-description {
+          width: 256px;
+          height: 56px;
+
+          color: $deactive-text;
+
+          text-align: center;
+
+          font-size: 16px;
+          font-weight: 400;
+
+          line-height: 28px;
+        }
+        .footer-dropdown {
+          width: 311px;
+          height: 48px;
+        }
+        .footer-social-media-and-copyright {
+          width: 136px;
+          height: 88px;
+
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+
+          .footer-social-media {
+            width: 136px;
+            height: 40px;
+
+            display: flex;
+            justify-content: space-between;
+            .footer-facebook-button {
+
+            }
+            .footer-youtube-button {
+
+            }
+            .footer-instagram-button {
+
+            }
+          }
+          .footer-copyright {
+            color: $deactive-text;
+
+            font-size: 12px;
+            font-weight: 600;
+            font-family: $alternate-font;
+
+            line-height: 16px;
+          }
+        }
+      }
+    }
+  }
+}

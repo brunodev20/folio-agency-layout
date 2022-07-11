@@ -1,8 +1,15 @@
+//CTA page SCSS
 @import '../abstract/variables';
 @import '../components/media-queries';
 
 #call-to-action {
-  height: 977px;
+  position: relative;
+  height: 1105px;
+  z-index: 1;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   .call-to-action-image {
     @include desktop {
       display: none;

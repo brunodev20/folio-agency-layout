@@ -1,3 +1,4 @@
+//Jobs page SCSS
 @import "../abstract/variables";
 @import "../components/media-queries";
 
@@ -100,6 +101,14 @@
             font-weight: 400;
             font-size: 12.8px;
             line-height: 23px;
+          }
+        }
+      }
+
+      .job-positions-cards:nth-child(4) {
+        .job-title-experience-and-arrows {
+          .job-title {
+            width: 190px;
           }
         }
       }

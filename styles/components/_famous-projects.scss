@@ -72,14 +72,13 @@
   }
 
   .bento-illustrations {
-    border: 1px solid red;
 
     height: 3047.56px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 
     .bento-containers-standard-config {
       display: flex;
