@@ -1,0 +1,81 @@
+//SCSS for the burger icon on top of the mobile Hero page
+@import "../abstract/variables";
+@import "../components/media-queries";
+
+.menu-body {
+  background-color: $color-heading;
+  width: 375px;
+  height: 812px;
+
+  main {
+    width: 375px;
+    height: 812px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .line-1 {
+      position: absolute;
+      margin-left: 94px;
+    }
+    .navbar {
+      width: 375px;
+      height: 128px;
+      
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      .navbar-images {
+        width: 311px;
+        height: 32px;
+        z-index: 1;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .full-logo-white {
+          width: 127.2px;
+          height: 32px;
+        }
+        .burger-menu-x-icon {
+          width: 32px;
+          height: 32px;
+        }
+      }
+    }
+    .items-container {
+      margin-left: 32px; 
+
+      .items {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        font-size: 32px;
+        font-weight: 700;
+
+        line-height: 40px;
+        letter-spacing: -0.5px;
+        width: 122px;
+        height: 280px;
+
+        h4 {
+        color: $shade-color;
+  
+  
+        &:active {
+          color: white;
+        }
+      }
+      }
+    }
+    .social-media {
+      margin-left: 46px;
+      margin-bottom: 80px;
+      width: 184px;
+      height: 40px;
+
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

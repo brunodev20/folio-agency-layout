@@ -124,6 +124,14 @@
 
           border: 0px;
           border-radius: 8px;
+
+          &:active {
+            color: white;
+            background-color: $blue-button;
+            
+            border: 1px solid white;
+            transition: 0.1s;
+          }
         }
       }
     }

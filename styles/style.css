@@ -49,6 +49,7 @@ html, body {
   display: none;
 }
 .hero-header .burger-icon-image {
+  z-index: 1;
   width: 32px;
   height: 12px;
 }
@@ -85,10 +86,12 @@ html, body {
   font-weight: 400;
   line-height: 28px;
 }
+#hero-page .hero-title-description-and-recent-work-button .hero-recent-work-button {
+  z-index: 1;
+}
 #hero-page .hero-title-description-and-recent-work-button .hero-recent-work-button .recent-work {
   width: 160px;
   height: 56px;
-  cursor: pointer;
   border-radius: 8px;
   border: 0px;
   font-size: 16px;
@@ -97,7 +100,7 @@ html, body {
   color: white;
   background-color: #5468E7;
 }
-#hero-page .hero-title-description-and-recent-work-button .hero-recent-work-button .recent-work:hover {
+#hero-page .hero-title-description-and-recent-work-button .hero-recent-work-button .recent-work:active {
   color: #5468E7;
   background-color: white;
   border: 1px solid #5468E7;
@@ -132,7 +135,7 @@ html, body {
   margin-top: 392px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
 }
 #who-we-are-page .who-we-are-header {
@@ -378,11 +381,11 @@ html, body {
   height: 190px;
   box-shadow: 0 0 10px #ECEBEC;
 }
-#what-we-do-page .qualities ul .what-we-do-cards:hover {
+#what-we-do-page .qualities ul .what-we-do-cards:active {
   background: #5468E7;
   box-shadow: 0px 0px;
 }
-#what-we-do-page .qualities ul .what-we-do-cards:hover .li-container p {
+#what-we-do-page .qualities ul .what-we-do-cards:active .li-container p {
   color: white;
 }
 #what-we-do-page .qualities ul .what-we-do-cards .li-container {
@@ -700,7 +703,7 @@ html, body {
   color: white;
   background-color: #5468E7;
 }
-#famous-projects .famous-projects-contact-us .famous-projects-contact-us-button:hover {
+#famous-projects .famous-projects-contact-us .famous-projects-contact-us-button:active {
   color: #5468E7;
   background-color: white;
   border: 1px solid #5468E7;
@@ -712,14 +715,75 @@ html, body {
   height: 1105px;
   z-index: 1;
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
 }
+#call-to-action .call-to-action-background-image {
+  position: absolute;
+  z-index: -1;
+}
 @media screen and (min-width: 1440px) {
-  #call-to-action .call-to-action-image {
+  #call-to-action .call-to-action-background-image {
     display: none;
   }
 }
+#call-to-action .famous-projects-title-description-and-apply-now-button {
+  margin-top: -500px;
+  color: white;
+  width: 261px;
+  height: 344px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#call-to-action .famous-projects-title-description-and-apply-now-button .call-to-action-title-and-description {
+  width: 261px;
+  height: 266px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#call-to-action .famous-projects-title-description-and-apply-now-button .call-to-action-title-and-description .call-to-action-title {
+  display: flex;
+  justify-content: space-between;
+  width: 138px;
+  height: 18px;
+  font-size: 14px;
+  font-family: "SF Pro Text", sans-serif;
+  font-weight: 600;
+  line-height: 18px;
+}
+#call-to-action .famous-projects-title-description-and-apply-now-button .call-to-action-title-and-description .call-to-action-description {
+  width: 261px;
+  height: 224px;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: -0.5px;
+}
+#call-to-action .famous-projects-title-description-and-apply-now-button .call-to-action-apply-now {
+  width: 143px;
+  height: 46px;
+}
+#call-to-action .famous-projects-title-description-and-apply-now-button .call-to-action-apply-now .call-to-action-apply-now-button {
+  width: 143px;
+  height: 46px;
+  color: #5468E7;
+  background-color: white;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  border: 0px;
+  border-radius: 8px;
+}
+#call-to-action .famous-projects-title-description-and-apply-now-button .call-to-action-apply-now .call-to-action-apply-now-button:active {
+  color: white;
+  background-color: #5468E7;
+  border: 1px solid white;
+  transition: 0.1s;
+}
+
 #jobs {
   width: 100%;
   height: 1042px;
@@ -960,6 +1024,12 @@ html, body {
   border: 0px;
   border-radius: 8px;
 }
+#say-hello .say-hello-page .say-hello-title-description-info-and-contact-us-button .say-hello-contact-us .say-hello-contact-us-button:active {
+  color: white;
+  background-color: #5468E7;
+  border: 1px solid white;
+  transition: 0.1s;
+}
 #say-hello footer .footer-container .footer-background-line {
   position: absolute;
   margin-top: -108px;
@@ -1010,4 +1080,72 @@ html, body {
   font-weight: 600;
   font-family: "SF Pro Text", sans-serif;
   line-height: 16px;
+}
+
+.menu-body {
+  background-color: #232340;
+  width: 375px;
+  height: 812px;
+}
+.menu-body main {
+  width: 375px;
+  height: 812px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.menu-body main .line-1 {
+  position: absolute;
+  margin-left: 94px;
+}
+.menu-body main .navbar {
+  width: 375px;
+  height: 128px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.menu-body main .navbar .navbar-images {
+  width: 311px;
+  height: 32px;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-body main .navbar .navbar-images .full-logo-white {
+  width: 127.2px;
+  height: 32px;
+}
+.menu-body main .navbar .navbar-images .burger-menu-x-icon {
+  width: 32px;
+  height: 32px;
+}
+.menu-body main .items-container {
+  margin-left: 32px;
+}
+.menu-body main .items-container .items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: -0.5px;
+  width: 122px;
+  height: 280px;
+}
+.menu-body main .items-container .items h4 {
+  color: #595976;
+}
+.menu-body main .items-container .items h4:active {
+  color: white;
+}
+.menu-body main .social-media {
+  margin-left: 46px;
+  margin-bottom: 80px;
+  width: 184px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
 }/*# sourceMappingURL=style.css.map */
