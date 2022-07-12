@@ -59,11 +59,11 @@
         height: 280px;
 
         h4 {
-        color: $shade-color;
+          color: white;
   
   
         &:active {
-          color: white;
+          color: $shade-color
         }
       }
       }

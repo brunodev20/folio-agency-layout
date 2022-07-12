@@ -2,13 +2,13 @@
 @import '../abstract/variables';
 
 @mixin desktop {
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1025px) {
     @content; //the @content tag allows us to place data inside this function. The data will be applied when the conditions stated in Line 5 are met
   }
 }
 
 @mixin tablet {
-  @media screen and (max-width: 1025px) {
+  @media screen and (min-width: 376px) {
     @content;
   }
 }

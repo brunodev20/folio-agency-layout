@@ -7,13 +7,25 @@ html, body {
 }
 
 #hero-navbar-container {
+  z-index: 2;
   width: 375px;
   height: 128px;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 376px) {
+  #hero-navbar-container {
+    width: 1024px;
+    height: 95.51px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  #hero-navbar-container .hero-image-mobile {
+    display: none;
+  }
+}
+@media screen and (min-width: 376px) {
   #hero-navbar-container .hero-image-mobile {
     display: none;
   }
@@ -34,6 +46,11 @@ html, body {
   align-items: center;
   justify-content: space-between;
 }
+@media screen and (min-width: 376px) {
+  .hero-header {
+    width: 924.2px;
+  }
+}
 .hero-header .full-logo-image {
   width: 127.2px;
   height: 32px;
@@ -42,54 +59,142 @@ html, body {
   width: 127.2px;
   height: 32px;
 }
-.hero-header .navbar-container {
-  display: none;
+@media screen and (max-width: 376px) {
+  .hero-header .navbar-container {
+    display: none;
+  }
 }
-.hero-header .contact-us-button {
-  display: none;
+@media screen and (min-width: 376px) {
+  .hero-header .navbar-container .navbar-items {
+    width: 346px;
+    height: 22px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .hero-header .navbar-container .navbar-items li {
+    color: #8B8B8B;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+  }
+}
+@media screen and (max-width: 376px) {
+  .hero-header .contact-us {
+    display: none;
+  }
+}
+@media screen and (min-width: 376px) {
+  .hero-header .contact-us .contact-us-button {
+    width: 160px;
+    height: 56px;
+    color: white;
+    background-color: #232340;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+  }
+  .hero-header .contact-us .contact-us-button:active {
+    color: #232340;
+    background: white;
+    border: 1px solid #232340;
+    transition: 0.1s;
+  }
 }
 .hero-header .burger-icon-image {
   z-index: 1;
   width: 32px;
   height: 12px;
 }
+@media screen and (min-width: 376px) {
+  .hero-header .burger-icon-image {
+    display: none;
+  }
+}
 
 #hero-page {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
-#hero-page .hero-title-description-and-recent-work-button {
-  z-index: 0;
+@media screen and (min-width: 376px) {
+  #hero-page {
+    align-items: flex-start;
+    margin-top: 73px;
+    margin-left: 107px;
+  }
+}
+#hero-page .hero-title-description-recent-work-button-and-scroll-down {
+  z-index: 2;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 311px;
   height: 356px;
-  margin-left: 32px;
 }
-#hero-page .hero-title-description-and-recent-work-button .hero-title-and-description {
+@media screen and (min-width: 376px) {
+  #hero-page .hero-title-description-recent-work-button-and-scroll-down {
+    width: 332px;
+    height: 512px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+#hero-page .hero-title-description-recent-work-button-and-scroll-down .hero-title-description-and-recent-work-button {
+  width: 311px;
+  height: 356px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media screen and (min-width: 376px) {
+  #hero-page .hero-title-description-recent-work-button-and-scroll-down .hero-title-description-and-recent-work-button {
+    width: 332px;
+    height: 412px;
+  }
+}
+#hero-page .hero-title-description-recent-work-button-and-scroll-down .hero-title-description-and-recent-work-button .hero-title-and-description {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 311px;
   height: 276px;
 }
-#hero-page .hero-title-description-and-recent-work-button .hero-title-and-description .hero-main-title {
+@media screen and (min-width: 376px) {
+  #hero-page .hero-title-description-recent-work-button-and-scroll-down .hero-title-description-and-recent-work-button .hero-title-and-description {
+    width: 332px;
+    height: 324px;
+  }
+}
+#hero-page .hero-title-description-recent-work-button-and-scroll-down .hero-title-description-and-recent-work-button .hero-title-and-description .hero-main-title {
   color: #232340;
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
   letter-spacing: -0.5px;
 }
-#hero-page .hero-title-description-and-recent-work-button .hero-title-and-description .hero-description {
+@media screen and (min-width: 376px) {
+  #hero-page .hero-title-description-recent-work-button-and-scroll-down .hero-title-description-and-recent-work-button .hero-title-and-description .hero-main-title {
+    color: #232340;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 72px;
+    letter-spacing: -0.5px;
+  }
+}
+#hero-page .hero-title-description-recent-work-button-and-scroll-down .hero-title-description-and-recent-work-button .hero-title-and-description .hero-description {
   color: #606060;
   font-size: 16px;
   font-weight: 400;
   line-height: 28px;
 }
-#hero-page .hero-title-description-and-recent-work-button .hero-recent-work-button {
+#hero-page .hero-title-description-recent-work-button-and-scroll-down .hero-title-description-and-recent-work-button .hero-recent-work {
   z-index: 1;
 }
-#hero-page .hero-title-description-and-recent-work-button .hero-recent-work-button .recent-work {
+#hero-page .hero-title-description-recent-work-button-and-scroll-down .hero-title-description-and-recent-work-button .hero-recent-work .recent-work-button {
   width: 160px;
   height: 56px;
   border-radius: 8px;
@@ -100,25 +205,60 @@ html, body {
   color: white;
   background-color: #5468E7;
 }
-#hero-page .hero-title-description-and-recent-work-button .hero-recent-work-button .recent-work:active {
+#hero-page .hero-title-description-recent-work-button-and-scroll-down .hero-title-description-and-recent-work-button .hero-recent-work .recent-work-button:active {
   color: #5468E7;
   background-color: white;
   border: 1px solid #5468E7;
   transition: 0.1s;
 }
-#hero-page .hero-scroll-down-button {
-  display: none;
+@media screen and (max-width: 376px) {
+  #hero-page .hero-title-description-recent-work-button-and-scroll-down .hero-scroll-down-tablet {
+    display: none;
+  }
+}
+@media screen and (min-width: 376px) {
+  #hero-page .hero-title-description-recent-work-button-and-scroll-down .hero-scroll-down-tablet {
+    width: 150px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #hero-page .hero-title-description-recent-work-button-and-scroll-down .hero-scroll-down-tablet .hero-scroll-down-button-tablet {
+    width: 40px;
+    height: 40px;
+  }
+  #hero-page .hero-title-description-recent-work-button-and-scroll-down .hero-scroll-down-tablet p {
+    width: 94px;
+    height: 44px;
+    color: #8B8B8B;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+  }
 }
 #hero-page .hero-background-images {
   z-index: 0;
   width: 375px;
 }
-#hero-page .hero-background-images .hero-image {
-  display: none;
+@media screen and (max-width: 376px) {
+  #hero-page .hero-background-images .hero-image {
+    display: none;
+  }
+}
+@media screen and (min-width: 376px) {
+  #hero-page .hero-background-images .hero-image {
+    position: absolute;
+    width: 670px;
+    height: 513.42px;
+    left: 323px;
+    top: 168px;
+  }
 }
 #hero-page .hero-background-images .line {
   position: relative;
   max-width: 50%;
+  z-index: -1;
 }
 #hero-page .hero-background-images .line .line-1 {
   position: absolute;
@@ -126,6 +266,16 @@ html, body {
   height: 582.58px;
   left: 176px;
   top: -484px;
+}
+@media screen and (min-width: 376px) {
+  #hero-page .hero-background-images .line .line-1 {
+    position: absolute;
+    width: 456.68px;
+    height: 582.58px;
+    margin-top: -227px;
+    left: 116px;
+    z-index: -1;
+  }
 }
 
 #who-we-are-page {
@@ -200,7 +350,7 @@ html, body {
   width: 46.45%;
   height: 100%;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1025px) {
   #who-we-are-page .who-we-are-header .arrow-and-dropdown .dropdown {
     display: none;
   }
@@ -723,7 +873,7 @@ html, body {
   position: absolute;
   z-index: -1;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1025px) {
   #call-to-action .call-to-action-background-image {
     display: none;
   }
@@ -1136,10 +1286,10 @@ html, body {
   height: 280px;
 }
 .menu-body main .items-container .items h4 {
-  color: #595976;
+  color: white;
 }
 .menu-body main .items-container .items h4:active {
-  color: white;
+  color: #595976;
 }
 .menu-body main .social-media {
   margin-left: 46px;

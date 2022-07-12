@@ -4,89 +4,178 @@
 
 #hero-page {
   width: 100%;
-  .hero-title-description-and-recent-work-button {
-    z-index: 0;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  @include tablet {
+    align-items: flex-start;
+    margin-top: 73px;
+    margin-left: 107px;
+  }
+  .hero-title-description-recent-work-button-and-scroll-down {    
+    z-index: 2;
+    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
+    
     width: 311px;
     height: 356px;
-
-    margin-left: 32px;
-    .hero-title-and-description {
+    @include tablet {
+      width: 332px;
+      height: 512px;
+      
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-
+    }
+    .hero-title-description-and-recent-work-button {
       width: 311px;
-      height: 276px;
-      .hero-main-title {
-        color: $color-heading;
-
-        font-size: 48px;
-        font-weight: 700;
-
-        line-height: 56px;
-        letter-spacing: -0.5px;
+      height: 356px;
+      
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      
+      @include tablet {
+        width: 332px;
+        height: 412px;
       }
-      .hero-description {
-        color: $color-text;
-
-        font-size: 16px;
-        font-weight: 400;
-
-        line-height: 28px;
+      .hero-title-and-description {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+        width: 311px;
+        height: 276px;
+        @include tablet {
+          width: 332px;
+          height: 324px;
+        }
+        .hero-main-title {
+          
+          color: $color-heading;
+          
+          font-size: 48px;
+          font-weight: 700;
+          
+          line-height: 56px;
+          letter-spacing: -0.5px;
+          @include tablet {
+            color: $color-heading;
+            
+            font-size: 64px;
+            font-weight: 700;
+            
+            line-height: 72px;
+            
+            letter-spacing: -0.5px;
+          }
+        }
+        .hero-description {
+          color: $color-text;
+          
+          font-size: 16px;
+          font-weight: 400;
+          
+          line-height: 28px;
+        }
+      }
+      .hero-recent-work {
+        z-index: 1;
+        .recent-work-button {
+          width: 160px;
+          height: 56px;
+          
+          border-radius: 8px;
+          border: 0px;
+          
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 22px;
+          
+          color: white;
+          background-color: $blue-button;
+          
+          &:active {
+            color: $blue-button;
+            background-color: white;
+            
+            border: 1px solid $blue-button;
+            transition: 0.1s;
+          }
+        }
       }
     }
-    .hero-recent-work-button {
-      z-index: 1;
-      .recent-work {
-        width: 160px;
-        height: 56px;
-
-        border-radius: 8px;
-        border: 0px;
-
-        font-size: 16px;
-        font-weight: 600;
-        line-height: 22px;
-
-        color: white;
-        background-color: $blue-button;
-
-        &:active {
-          color: $blue-button;
-          background-color: white;
-
-          border: 1px solid $blue-button;
-          transition: 0.1s;
+    .hero-scroll-down-tablet {
+      
+      @include mobile {
+        display: none;
+      }
+      @include tablet {
+        
+        width: 150px;
+        height: 44px;
+        
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .hero-scroll-down-button-tablet {
+          width: 40px;
+          height: 40px;
+        }
+        p {
+          width: 94px;
+          height: 44px;
+          
+          color: $grey-text;
+          
+          font-size: 16px;
+          font-weight: 600;
+          
+          line-height: 22px;
         }
       }
     }
   }
-  .hero-scroll-down-button {
-    display: none;
-  }
-
+  
   .hero-background-images {
     z-index: 0;
     width: 375px;
-
+    
     .hero-image {
-      display: none;
+      @include mobile {
+        display: none;
+      }
+      @include tablet {
+        position: absolute;
+        width: 670px;
+        height: 513.42px;
+        left: 323px;
+        top: 168px;
+      }
     }
-
+    
     .line {
       position: relative;
       max-width: 50%;
+      z-index: -1;
+      
       .line-1 {
         position: absolute;
         overflow: hidden;
         height: 582.58px;
         left: 176px;
         top: -484px;
+        @include tablet {
+          position: absolute;
+          width: 456.68px;
+          height: 582.58px;
+          margin-top: -227px;
+          left: 116px;
+          z-index: -1;
+        }
       }
     }
   }
